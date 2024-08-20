@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Bungee';
+        font-style: normal;
+        font-weight: 400;
+        src: url(/BungeeTint-Regular.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: 'Teko';
+        font-style: normal;
+        font-weight: 400;
+        src: url(/Teko-VariableFont_wght.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: 'Amsterdam';
+        font-style: normal;
+        font-weight: 400;
+        src: url(/NewAmsterdam-Regular.ttf) format('truetype');
+    }
+}
