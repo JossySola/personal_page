@@ -8,7 +8,7 @@ export default function Bubble ({text, style, url}: {
 }) {
 
     return (
-        <Link to={url ? url : "#"} className='active:scale-125 active:transition-transform'>
+        <Link to={url ? url : "#"} className='active:scale-125 active:transition-transform w-fit'>
             <span className={`hover:scale-125 
                 hover:cursor-pointer
                 transition-transform
@@ -18,11 +18,12 @@ export default function Bubble ({text, style, url}: {
                 text-white 
                 p-2 
                 rounded-2xl 
-                border-solid 
+                border-b-solid 
                 border-b-2
+                border-b-[#30679B]
+                border-t-solid
                 border-t-2
                 border-t-[#FAFAFF]
-                border-b-[#30679B]
                 inline-block
                 relative 
                 w-fit
