@@ -21,4 +21,11 @@
         font-weight: 400;
         src: url(/NewAmsterdam-Regular.ttf) format('truetype');
     }
+    @font-face {
+        font-family: 'Geist';
+        font-style: normal;
+        font-weight: 400;
+        src: url(/Geist-SemiBold.ttf) format('truetype');
+        src: url(/Geist-SemiBold.otf) format('opentype');
+    }
 }

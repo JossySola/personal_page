@@ -16,7 +16,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="bg-[#FAFAFF] flex justify-center content-center">
+      <body className="bg-[#FAFAFF]" style={{display: "flex", height: "100vh", justifyContent: "center", alignItems: "center"}}>
         {children}
         <ScrollRestoration />
         <Scripts />

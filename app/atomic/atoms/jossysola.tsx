@@ -1,6 +1,6 @@
 export default function Jossy () {
     return (
-        <p className="font-[Teko] text-[3.5rem] text-center">Jossy Solá</p>
+        <p className="font-[Amsterdam] text-[3.5rem] text-center">Jossy Solá</p>
     )
 }
 

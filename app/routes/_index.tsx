@@ -1,6 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
-import Jossy from "~/atomic/atoms/jossysola";
-import Mosaic from "~/atomic/molecules/mosaic";
+import Profile from "~/atomic/atoms/profile";
+import Menu from "~/atomic/molecules/menu";
 
 export const meta: MetaFunction = () => {
   return [
@@ -12,8 +12,9 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <>
-      <main className="font-serif p-0">
-        <Mosaic />
+      <main className="flex p-0 flex-col gap-10 items-center">
+        <Profile />
+        <Menu />
       </main>
     </>
   );
