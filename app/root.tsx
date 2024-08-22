@@ -8,9 +8,8 @@ import {
 } from "@remix-run/react";
 import "./tailwind.css";
 import Profile from "./atomic/molecules/profile";
-import getUserLocale from "get-user-locale";
 import { LoaderFunctionArgs } from "@remix-run/node";
-import { useEffect, useState } from "react";
+import { useLanguage } from "./hooks/custom";
 
 export async function loader({
   request,
@@ -21,13 +20,8 @@ export async function loader({
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const data = useLoaderData<typeof loader>();
-  const [lang, setLang] = useState("es");
-  const userLocale = getUserLocale();
-  
-  useEffect(() => {
-    setLang(userLocale);
-  }, []);
-  
+  const lang = useLanguage();
+
   return (
     <html lang="en">
       <head>
