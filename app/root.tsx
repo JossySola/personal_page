@@ -9,19 +9,19 @@ import {
 import "./tailwind.css";
 import Profile from "./atomic/molecules/profile";
 import { LoaderFunctionArgs } from "@remix-run/node";
-import { useLanguage } from "./hooks/custom";
+import { useLanguage, getData } from "./hooks/custom";
+import { DataContext } from "./hooks/context";
 
 export async function loader({
   request,
 }: LoaderFunctionArgs) {
-  const response = await fetch("https://raw.githubusercontent.com/JossySola/personal_page/main/app/data/data.json");
-  return response.json()
+  return getData();
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const data = useLoaderData<typeof loader>();
   const lang = useLanguage();
-
+  
   return (
     <html lang="en">
       <head>
@@ -43,8 +43,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
       md:gap-20">
         <Profile location={data.location[lang]} description={data.description[lang]} />
 
-        {children}
-
+        <DataContext.Provider value={data}>
+          {children}
+        </DataContext.Provider>
+        
         <ScrollRestoration />
         <Scripts />
       </body>
