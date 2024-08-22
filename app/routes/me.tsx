@@ -1,11 +1,13 @@
 import Social from "~/atomic/molecules/social"
+import Article from "~/atomic/organisms/article"
 
 export default function Me () {
     return (
-        <article className="GeistReg w-full text-left border-t-2 md:border-none">
-            <Social />
-            
-            <p>Hello World</p>
-        </article>
+        <>
+            <Article>
+                <Social />
+                <p>Hello World</p>
+            </Article>
+        </>
     )
 }
