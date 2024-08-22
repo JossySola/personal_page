@@ -5,7 +5,7 @@ export default function Profile({location, description} : {
 }) {
 
     return (
-        <section className="flex flex-col items-center font-[GeistReg]">
+        <section className="flex flex-col items-center font-[GeistMed]">
             <figure className="inline-flex flex-col items-center">
                 <img src="/me.webp" alt="Face picture of myself" className="rounded-full w-32 h-32 object-cover"/>
                 <figcaption className="font-[#1C1C1C] font-[Amsterdam] text-5xl text-center">Jossy Solá</figcaption>

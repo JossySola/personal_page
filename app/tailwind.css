@@ -34,4 +34,10 @@
         font-weight: 400;
         src: url(/Geist-Regular.ttf) format('truetype');
     }
+    @font-face {
+        font-family: 'GeistMed';
+        font-style: normal;
+        font-weight: 400;
+        src: url(/Geist-Medium.ttf) format('truetype');
+    }
 }
