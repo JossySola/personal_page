@@ -15,7 +15,7 @@ export default function Article ({children}: {
                 <ArrowLeftCircle />
             </button>
             
-            <article className="GeistReg w-full text-left border-t-2 md:border-none">
+            <article className="GeistReg flex-col justify-center  w-full text-left border-t-2 md:border-none">
                 {children}
             </article>
         </>
