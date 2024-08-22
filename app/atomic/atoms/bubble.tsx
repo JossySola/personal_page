@@ -14,7 +14,7 @@ export default function Bubble ({text, style, url}: {
                 transition-transform
                 bg-[#4594DF] 
                 font-[Geist] 
-                text-3xl 
+                text-2xl 
                 text-white 
                 p-2 
                 rounded-2xl 

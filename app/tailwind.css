@@ -28,4 +28,10 @@
         src: url(/Geist-SemiBold.ttf) format('truetype');
         src: url(/Geist-SemiBold.otf) format('opentype');
     }
+    @font-face {
+        font-family: 'GeistReg';
+        font-style: normal;
+        font-weight: 400;
+        src: url(/Geist-Regular.ttf) format('truetype');
+    }
 }
