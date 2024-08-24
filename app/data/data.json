@@ -9,13 +9,13 @@
     },
     "nav": {
         "en": {
-            "1": "About",
+            "1": "Articles",
             "2": "Art",
             "3": "Web Development",
             "4": "Contact"
         },
         "es": {
-            "1": "Acerca",
+            "1": "Artículos",
             "2": "Arte",
             "3": "Desarrollo Web",
             "4": "Contacto"
