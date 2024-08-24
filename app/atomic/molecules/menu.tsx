@@ -2,7 +2,7 @@ import Bubble from "../atoms/bubble";
 import { useContext } from "react";
 import { DataContext } from "~/hooks/context";
 import { useLanguage } from "~/hooks/custom";
-import Social from "./social";
+import Social from "../atoms/social";
 
 export default function Menu () {
     const data = useContext(DataContext);

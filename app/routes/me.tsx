@@ -1,4 +1,4 @@
-import Social from "~/atomic/molecules/social"
+import Social from "~/atomic/atoms/social"
 import Article from "~/atomic/organisms/article"
 
 export default function Me () {

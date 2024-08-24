@@ -7,7 +7,7 @@ import {
   useLoaderData,
 } from "@remix-run/react";
 import "./tailwind.css";
-import Profile from "./atomic/molecules/profile";
+import Profile from "./atomic/atoms/profile";
 import { LoaderFunctionArgs } from "@remix-run/node";
 import { useLanguage, getData } from "./hooks/custom";
 import { DataContext } from "./hooks/context";
