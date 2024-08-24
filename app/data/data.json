@@ -20,5 +20,9 @@
             "3": "Desarrollo Web",
             "4": "Contacto"
         }
+    },
+    "articles": {
+        "en": ["about_me"],
+        "es": ["acerca_de_mi"]
     }
 }
