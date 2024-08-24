@@ -18,12 +18,9 @@ export default function Bubble ({text, style, url}: {
                 text-white 
                 p-2 
                 rounded-2xl 
-                border-b-solid 
-                border-b-2
-                border-b-[#30679B]
-                border-t-solid
-                border-t-2
-                border-t-[#FAFAFF]
+                border-solid 
+                border
+                border-[#30679B]
                 inline-block
                 relative 
                 w-fit
