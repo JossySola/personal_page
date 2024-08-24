@@ -2,6 +2,7 @@ import Bubble from "../atoms/bubble";
 import { useContext } from "react";
 import { DataContext } from "~/hooks/context";
 import { useLanguage } from "~/hooks/custom";
+import Social from "./social";
 
 export default function Menu () {
     const data = useContext(DataContext);
@@ -11,6 +12,7 @@ export default function Menu () {
 
     return (
         <nav className="flex flex-col">
+            <Social />
             <Bubble text={nav[lang][1]} style="rotate-2" url="me"/>
             <Bubble text={nav[lang][2]} style="rotate-3" url="art"/>
             <Bubble text={nav[lang][3]} style="rotate-[-3deg]" url="dev"/>

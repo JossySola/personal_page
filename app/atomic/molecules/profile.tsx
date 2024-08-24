@@ -1,4 +1,3 @@
-import { Info } from "@geist-ui/icons"
 export default function Profile({location, description} : {
     location: string,
     description: string,
@@ -13,7 +12,7 @@ export default function Profile({location, description} : {
             </figure>
             <p className="text-[#7A7A7A]">{location}</p>
 
-            <p className="mt-3 flex flex-row"><Info className="mr-3"/>{description}</p>
+            <p className="mt-3 flex flex-row">{description}</p>
         </section>
     )
 }
