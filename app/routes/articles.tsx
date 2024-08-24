@@ -1,12 +1,11 @@
-import Social from "~/atomic/atoms/social"
-import Article from "~/atomic/organisms/article"
+import Category from "~/atomic/organisms/category"
 
 export default function Me () {
     return (
         <>
-            <Article>
+            <Category>
                 <p>Hello World</p>
-            </Article>
+            </Category>
         </>
     )
 }

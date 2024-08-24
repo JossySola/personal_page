@@ -1,9 +1,9 @@
-import Article from "~/atomic/organisms/article";
+import Category from "~/atomic/organisms/category";
 
 export default function Art () {
     return (
-        <Article>
+        <Category>
             <p></p>
-        </Article>
+        </Category>
     )
 }

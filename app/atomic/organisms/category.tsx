@@ -1,7 +1,7 @@
 import { ArrowLeftCircle } from "@geist-ui/icons"
 import { useNavigate } from "@remix-run/react"
 
-export default function Article ({children}: {
+export default function Category ({children}: {
     children: React.ReactNode
 }) {
     const navigate = useNavigate();
