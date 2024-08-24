@@ -7,15 +7,14 @@ export default function Article ({children}: {
     const navigate = useNavigate();
 
     return (
-        <>
-            <button style={{cursor: "pointer"}} onClick={(e) => {
-                    e.preventDefault();
-                    navigate(-1);
-                }} aria-label="Go Back button">
-                <ArrowLeftCircle />
-            </button>
-            
-            <article className="GeistReg flex-col items-center justify-center  w-full text-left border-t-2 md:border-none">
+        <> 
+            <article className="GeistReg flex flex-col items-center justify-center  w-full text-left border-t-2 md:border-none md:w-1/4">
+                <button style={{cursor: "pointer", marginBottom: 20, marginTop: 20}} onClick={(e) => {
+                        e.preventDefault();
+                        navigate(-1);
+                    }} aria-label="Go Back button">
+                    <ArrowLeftCircle />
+                </button>
                 {children}
             </article>
         </>

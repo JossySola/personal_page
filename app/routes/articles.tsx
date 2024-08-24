@@ -5,7 +5,6 @@ export default function Me () {
     return (
         <>
             <Article>
-                <Social />
                 <p>Hello World</p>
             </Article>
         </>
