@@ -11,7 +11,7 @@ export default function Menu () {
     const nav = data.nav && data.nav;
 
     return (
-        <nav className="flex flex-col items-center">
+        <nav className="flex flex-col items-center md:max-h-screen">
             <Social />
             <section className="flex flex-col w-fit md:items-center">
                 <Bubble text={nav[lang][1]} style="rotate-[-6deg] translate-y-2" url="articles"/>
