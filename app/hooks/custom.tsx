@@ -1,5 +1,7 @@
 import getUserLocale from "get-user-locale";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import Markdown from "react-markdown";
+import { DataContext } from "./context";
 
 export function useLanguage () {
     const [lang, setLang] = useState("es");
@@ -45,4 +47,32 @@ export async function getData () {
         }
     }
     
+}
+
+export function useMarkdownFiles () {
+    const [files, setFiles] = useState<Array<JSX.Element>>([]);
+    const [names, setNames] = useState<Array<string>>([]);
+
+    const data = useContext(DataContext);
+    const lang = useLanguage();
+    const articles = data.articles[lang];
+
+    useEffect(() => {
+        const fetchMarkdown = async () => {
+            articles.map(async (article: string) => {
+                const fetched = await fetch(`https://raw.githubusercontent.com/JossySola/personal_page/main/app/data/${article}.md`)
+                const text = await fetched.text();
+                setFiles(prev => {
+                    return [...prev, <Markdown children={text}/>]
+                });
+                setNames(prev => {
+                    return [...prev, article.replaceAll("_", " ").toUpperCase()];
+                })
+            })
+        }
+
+        fetchMarkdown();
+    }, [])
+    
+    return {files, names};
 }
