@@ -31,22 +31,23 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body className="
-      flex
-      flex-col
-      h-[100vh]
-      p-0
-      gap-10 
-      items-center 
-      justify-center
-      bg-[#FAFAFF] 
-      md:flex-row 
-      md:gap-20">
-        <Profile location={data.location[lang]} description={data.description[lang]} />
+        flex
+        flex-col
+        h-screen
+        p-0
+        items-center 
+        justify-center
+        font-[GeistReg]
+        bg-[#FAFAFF]">
 
-        <DataContext.Provider value={data}>
-          {children}
-        </DataContext.Provider>
-        
+        <main className="md:flex md:justify-center md:items-center md:gap-20 max-h-full w-full overflow-y-auto p-6">
+          <Profile location={data.location[lang]} description={data.description[lang]} />
+
+          <DataContext.Provider value={data}>
+            {children}
+          </DataContext.Provider>
+        </main>
+
         <ScrollRestoration />
         <Scripts />
       </body>

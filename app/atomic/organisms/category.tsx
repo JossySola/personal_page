@@ -8,8 +8,8 @@ export default function Category ({children}: {
 
     return (
         <> 
-            <article className="GeistReg flex flex-col items-center justify-center  w-full text-left border-t-2 md:border-none md:w-1/4">
-                <button style={{cursor: "pointer", marginBottom: 20, marginTop: 20}} onClick={(e) => {
+            <article className="GeistReg flex flex-col items-center justify-center mt-6 w-full text-left border-t-2 md:border-none md:w-1/4">
+                <button className="cursor-pointer m-[20px]" onClick={(e) => {
                         e.preventDefault();
                         navigate(-1);
                     }} aria-label="Go Back button">
