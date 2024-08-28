@@ -24,5 +24,12 @@
     "articles": {
         "en": ["about_me"],
         "es": ["acerca_de_mi"]
+    },
+    "gallery": {
+        "ceramics": {
+            "ceramic1.webp": "",
+            "ceramic2.webp": "",
+            "ceramic3.webp": ""
+        }
     }
 }
