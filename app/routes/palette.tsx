@@ -1,6 +1,6 @@
 export default function Palette () {
     return (
-        <article className="p-6 max-h-screen">
+        <article className="p-6 max-h-screen overflow-x-scroll">
             <h1 className="text-3xl my-6">Color Palette</h1>
 
             <section>
