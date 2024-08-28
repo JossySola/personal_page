@@ -76,3 +76,28 @@ export function useMarkdownFiles () {
     
     return {files, names};
 }
+
+export function usePictures (folder: string) {
+    const [images, setImages] = useState<Array<JSX.Element>>([]);
+    const data = useContext(DataContext);
+    const imagesObject = data.gallery[folder];
+
+    useEffect(() => {
+        const fetchPictures = () => {
+            for (let image in imagesObject) {
+                
+                setImages(prev => {
+                    return [...prev, 
+                    <figure>
+                        <img src={`https://raw.githubusercontent.com/JossySola/personal_page/main/app/data/pictures/${image}`} alt={`${folder}'s picture.`}/>
+                        <figcaption>{imagesObject[image]}</figcaption>
+                    </figure>]
+                })
+            }
+        }
+
+        fetchPictures();
+    }, []);
+
+    return images;
+}
