@@ -12,7 +12,7 @@ export default function Profile({location, description} : {
             </figure>
             <p className="text-[#7A7A7A]">{location}</p>
 
-            <p className="mt-3 flex flex-row">{description}</p>
+            <p className="mt-3 flex flex-row text-center">{description}</p>
         </section>
     )
 }
