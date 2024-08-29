@@ -1,21 +1,17 @@
 import { usePictures } from "~/hooks/custom";
 import Bullets from "../atoms/bullets";
+import { useState } from "react";
 
 export default function Gallery () {
-    // img array
-
-    // bullets. Update everytime an arrow is clicked based on current index
-
-    // current index
-    // prev img
-    // current img
-    // next img
-
+    const [index, setIndex] = useState<number>(0);
+    const [prev, setPrev] = useState(null);
+    const [current, setCurrent] = useState();
+    const [next, setNext] = useState();
     const pictures = usePictures("ceramics");
-    console.log(pictures.length)
+    
     return (
         <>
-            <Bullets />
+            <Bullets quantity={pictures.length} index={index}/>
         </>
     )
 }
