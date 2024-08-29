@@ -13,7 +13,7 @@ export default function Gallery () {
     const pictures = usePictures("ceramics");
     
     
-    if (ref.current === 0 || ref.current < 768) {
+    if (typeof ref.current === "undefined" || ref.current < 768) {
         return (
             <>
                 <Bullets quantity={pictures.length} index={index}/>
