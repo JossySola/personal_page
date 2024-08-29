@@ -7,7 +7,7 @@ export default function Bullets ({quantity, index}: {
 
     const handleDisplay = () => {
         let bullets: Array<JSX.Element> = [];
-        for (let i = 0; i < quantity-1; i++) {
+        for (let i = 0; i < quantity; i++) {
             if (i === index) {
                 bullets.push(<li key={uuidv4()} className="mx-1 float-left text-[#9C9C9C]">●</li>)
             } else {
