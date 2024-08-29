@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid"
+
 export default function Bullets ({quantity, index}: {
     quantity: number,
     index: number,
@@ -7,9 +9,9 @@ export default function Bullets ({quantity, index}: {
         let bullets: Array<JSX.Element> = [];
         for (let i = 0; i < quantity-1; i++) {
             if (i === index) {
-                bullets.push(<li className="mx-1 float-left text-[#9C9C9C]">●</li>)
+                bullets.push(<li key={uuidv4()} className="mx-1 float-left text-[#9C9C9C]">●</li>)
             } else {
-                bullets.push(<li className="mx-1 float-left text-[#E0E0E0]">●</li>)
+                bullets.push(<li key={uuidv4()} className="mx-1 float-left text-[#E0E0E0]">●</li>)
             }
         }
         return bullets;
