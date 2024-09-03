@@ -7,7 +7,7 @@ export default function Profile({location, description} : {
         <section className="flex flex-col items-center font-[GeistMed] md:sticky">
             <figure className="inline-flex flex-col items-center">
                 <img src="/me.webp" alt="Face picture of myself" className="rounded-full w-32 h-32 object-cover"/>
-                <figcaption className="font-[#13293D] font-[Amsterdam] text-5xl text-center"><a href="www.jossysola.com">Jossy Solá</a></figcaption>
+                <figcaption className="font-[#13293D] font-[Amsterdam] text-5xl text-center"><a href="/">Jossy Solá</a></figcaption>
                 
             </figure>
             <p className="text-[#7A7A7A]">{location}</p>
