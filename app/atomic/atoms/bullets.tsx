@@ -18,7 +18,7 @@ export default function Bullets ({quantity, index}: {
     }
 
     return (
-        <ul className="inline list-none text-base p-0 m-0">
+        <ul className="inline list-none text-base p-0 m-6">
             {handleDisplay()}
         </ul>
     )

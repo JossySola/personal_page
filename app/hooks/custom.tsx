@@ -1,5 +1,5 @@
 import getUserLocale from "get-user-locale";
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect, useContext, createContext } from "react";
 import Markdown from "react-markdown";
 import { DataContext } from "./context";
 
@@ -77,10 +77,11 @@ export function useMarkdownFiles () {
     return {files, names};
 }
 
-export function usePictures (folder: string) {
+export function usePictures (folder: string | undefined): [Array<JSX.Element>, boolean] {
     const [images, setImages] = useState<Array<JSX.Element>>([]);
+    const [isFetching, setIsFetching] = useState<boolean>(true);
     const data = useContext(DataContext);
-    const imagesObject = data.gallery[folder];
+    const imagesObject = data && data.gallery[folder];
 
     useEffect(() => {
         const fetchPictures = () => {
@@ -88,16 +89,17 @@ export function usePictures (folder: string) {
                 
                 setImages(prev => {
                     return [...prev, 
-                    <figure>
+                    <figure className="w-[80vw] max-w-[400px]">
                         <img src={`https://raw.githubusercontent.com/JossySola/personal_page/main/app/data/pictures/${image}`} alt={`${folder}'s picture.`}/>
                         <figcaption>{imagesObject[image]}</figcaption>
                     </figure>]
                 })
             }
+            setIsFetching(false);
         }
 
         fetchPictures();
     }, []);
 
-    return images;
+    return [images, isFetching];
 }

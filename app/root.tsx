@@ -40,7 +40,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         font-[GeistReg]
         bg-[#FAFAFF]">
 
-        <main className="md:flex md:justify-center md:items-center md:gap-20 max-h-full w-full overflow-y-auto p-6">
+        <main className="md:flex md:justify-center md:items-center md:gap-5 max-h-full w-full overflow-y-auto p-6">
           <Profile location={data.location[lang]} description={data.description[lang]} />
 
           <DataContext.Provider value={data}>

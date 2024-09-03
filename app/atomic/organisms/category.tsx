@@ -13,7 +13,7 @@ export default function Category ({children}: {
                         e.preventDefault();
                         navigate(-1);
                     }} aria-label="Go Back button">
-                    <ArrowLeftCircle />
+                    <ArrowLeftCircle size={42}/>
                 </button>
                 {children}
             </article>
