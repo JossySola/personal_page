@@ -90,7 +90,7 @@ export function usePictures (folder: string | undefined): [Array<JSX.Element>, b
                 setImages(prev => {
                     return [...prev, 
                     <figure className="w-[80vw] max-w-[400px]">
-                        <img src={`https://raw.githubusercontent.com/JossySola/personal_page/main/app/data/pictures/${image}`} alt={`${folder}'s picture.`}/>
+                        <img src={`https://raw.githubusercontent.com/JossySola/personal_page/main/app/data/pictures/${image}`} alt={imagesObject[image] ? imagesObject[image] : `${folder}'s picture.`} decoding="async"/>
                         <figcaption>{imagesObject[image]}</figcaption>
                     </figure>]
                 })

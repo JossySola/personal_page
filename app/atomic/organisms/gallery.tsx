@@ -76,7 +76,7 @@ export default function Gallery () {
                     <img src={back} width={64} height={64}/>
                 </button>
                 {
-                    isFetching ? <div className=" w-[80vw] h-[400px] "><Loader size={64} className="animate-spin"/></div> : current
+                    isFetching ? <div className="inline-flex justify-center content-center w-[80vw] h-[400px] "><Loader size={64} className="animate-spin"/></div> : current
                 }
                 <button 
                 onClick={(e) => {
