@@ -27,9 +27,15 @@
     },
     "gallery": {
         "ceramics": {
-            "ceramic1.webp": "",
-            "ceramic2.webp": "",
-            "ceramic3.webp": ""
+            "ceramic1.webp": "Two ceramic pieces, one in shape of a human skill with no jaw and the other being a bear from chest to head, lying both arms in a platform meant to be to cover a cup. Both in natural burnt clay color. Front view",
+            "ceramic2.webp": "Two ceramic pieces, one in shape of a human skill with no jaw and the other being a bear from chest to head, lying both arms in a platform meant to be to cover a cup. Both in natural burnt clay color. Up view",
+            "ceramic3.webp": "Ceramic piece in shape of a human skull without the jaw. Side view",
+            "TORSO_1.webp": "Plant pot in a female shape from shoulders to pelvis and in a vibrant red color. Nipples are navy blue and in the pelvis zone, where the legs are meant to be, there are two navy blue orifices for water to come out. Front view",
+            "TORSO_2.webp": "Plant pot in a female shape from shoulders to pelvis and in a vibrant red color. Nipples are navy blue and in the pelvis zone, where the legs are meant to be, there are two navy blue orifices for water to come out. Side view",
+            "TORSO_3.webp": "Plant pot in a female shape from shoulders to pelvis and in a vibrant red color. Nipples are navy blue and in the pelvis zone, where the legs are meant to be, there are two navy blue orifices for water to come out. Back view",
+            "TORSO_UP.webp": "Plant pot in a female shape from shoulders to pelvis and in a vibrant red color. Nipples are navy blue and in the pelvis zone, where the legs are meant to be, there are two navy blue orifices for water to come out. Up view",
+            "CASTILLO.webp": "Castle with asymetric proportions inspired by the Weasly's house from Harry Potter, in the middle of the sea 🌊. Front view",
+            "CASTILLO_1.webp": "Castle with asymetric proportions inspired by the Weasly's house from Harry Potter, in the middle of the sea 🌊. Side view"
         }
     }
 }
