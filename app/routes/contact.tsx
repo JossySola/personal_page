@@ -1,9 +1,10 @@
+import ContactForm from "~/atomic/molecules/form";
 import Category from "~/atomic/organisms/category";
 
-export default function Art () {
+export default function Contact () {
     return (
         <Category>
-            <p></p>
+            <ContactForm />
         </Category>
     )
 }
