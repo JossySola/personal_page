@@ -21,9 +21,4 @@ export default defineConfig({
       }
     }
   ],
-  build: {
-    rollupOptions: {
-      external: ['@emailjs/browser']
-    }
-  },
 });
