@@ -91,7 +91,7 @@ export function usePictures (folder: string | undefined): [Array<JSX.Element>, b
                     return [...prev, 
                     <figure className="w-[80vw] max-w-[400px]">
                         <img src={`https://raw.githubusercontent.com/JossySola/personal_page/main/app/data/pictures/${image}`} alt={imagesObject[image] ? imagesObject[image] : `${folder}'s picture.`} decoding="async"/>
-                        <figcaption className="p-3 text-center border  shadow-md">{imagesObject[image]}</figcaption>
+                        <figcaption className="p-3 text-center border-t-0 shadow-md">{imagesObject[image]}</figcaption>
                     </figure>]
                 })
             }
