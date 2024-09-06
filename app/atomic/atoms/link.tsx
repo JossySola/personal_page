@@ -6,7 +6,7 @@ export default function GoTo ({url, text = "No text"}: {
 }) {
 
     return (
-        <Link to={url} className="inline bg-[#5E7992] border-4 border-[#A7D5FF] m-6 p-3 text-white rounded-lg md:border-[#5E7992] md:hover:border-[#A7D5FF] md:transition md:hover:ease-in-out md:delay-100">
+        <Link to={url} className="inline bg-[#314D68] text-white p-3 m-3 rounded w-fit hover:bg-[#4f6a87]">
             {text}
         </Link>
     )

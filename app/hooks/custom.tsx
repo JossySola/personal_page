@@ -55,7 +55,7 @@ export function useMarkdownFiles () {
 
     const data = useContext(DataContext);
     const lang = useLanguage();
-    const articles = data.articles[lang];
+    const articles = lang === "es" && data.articles[lang] ? data.articles[lang] : data.articles['en'];
 
     useEffect(() => {
         const fetchMarkdown = async () => {

@@ -22,8 +22,8 @@
         }
     },
     "articles": {
-        "en": ["about_me"],
-        "es": ["acerca_de_mi"]
+        "en": ["neuro-EN"],
+        "es": ["neuro-ES"]
     },
     "gallery": {
         "ceramics": {
