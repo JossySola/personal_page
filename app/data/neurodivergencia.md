@@ -1,5 +1,3 @@
-# Neurodivergencia
-
 La `Neurodivergencia` abarca algunas condiciones originadas por un diferente desarrollo neuronal.
 
 Estas condiciones mentales incluyen trastornos mentales, discapacidades cognitivas, entre otros. Sin embargo, hay fortalezas que pudieran venir de la mano, como lo es una **mejor capacidad de memoria**. **memoria fotográfica**, **la habilidad de resolver cálculos matemáticos complejos**, **sentidos agudizados**, **hiperconcentración**, y muchas más.

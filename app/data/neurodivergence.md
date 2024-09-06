@@ -1,5 +1,3 @@
-# Neurodivergence
-
 `Neurodivergence` comprehends some mental conditions caused by a different neuronal development.
 
 These mental conditions include mental disorders, learning disabilities, and other possible challenges. However, there are also strenghts that may come with the conditions, such as **better memory capacity**, **photographic memory**, the **ability to solve complex mathematical calculations**, **sharp human senses**, **hyperfocus**, and many more.

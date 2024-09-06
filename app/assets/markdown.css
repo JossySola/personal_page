@@ -1,0 +1,22 @@
+.markdown {
+    font-size: 1.1rem;
+}
+.markdown h1 {
+    font-size: 2rem;
+}
+.markdown h1, p {
+    margin: 0.75rem;
+}
+.markdown code {
+    background-color: white;
+    padding: 0.3rem;
+    color: black;
+    border-radius: 0.4rem;
+}
+.markdown a {
+    display: block;
+    text-decoration: underline;
+}
+.markdown a:hover {
+    color: #A7D5FF;
+}

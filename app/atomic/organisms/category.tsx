@@ -8,7 +8,7 @@ export default function Category ({children}: {
 
     return (
         <> 
-            <article className="GeistReg flex flex-col items-center justify-center mt-6 w-full text-left border-t-2 md:border-none md:min-w-fit md:w-1/2 md:max-w-[700px]">
+            <article className="GeistReg flex flex-col items-center justify-center mt-6 w-full text-left border-t-2 md:border-none md:w-fit md:max-w-[500px] md:h-screen md:overflow-y-scroll">
                 <button className="cursor-pointer m-[20px]" onClick={(e) => {
                         e.preventDefault();
                         navigate(-1);
