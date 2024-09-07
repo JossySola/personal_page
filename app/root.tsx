@@ -28,13 +28,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {/*HTML Meta Tags*/}
-        <title></title>
-        <meta name="description" content=""/>
+        <title>Jossy Sola Homepage</title>
+        <meta name="description" content="Jossy Sola Homepage. Art, Neurodivergent, Frontend development"/>
 
         {/*Facebook Meta Tags*/}
         <meta property="og:url" content="https://www.jossysola.com/banner.png"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:title" content=""/>
+        <meta property="og:title" content="Jossy Sola Homepage"/>
         <meta property="og:description" content=""/>
         <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/c4e75356-f99a-44e2-9354-54947c0dcc80.png?token=TNTl6sY1pCb6UOzKyUhwgFhPxABkEb2bsnbo6Id5bPk&height=675&width=1200&expires=33261691874"/>
 
@@ -42,7 +42,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="twitter:card" content="summary_large_image"/>
         <meta property="twitter:domain" content="jossysola.com"/>
         <meta property="twitter:url" content="https://www.jossysola.com/banner.png"/>
-        <meta name="twitter:title" content=""/>
+        <meta name="twitter:title" content="Jossy Sola Homepage"/>
         <meta name="twitter:description" content=""/>
         <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/c4e75356-f99a-44e2-9354-54947c0dcc80.png?token=TNTl6sY1pCb6UOzKyUhwgFhPxABkEb2bsnbo6Id5bPk&height=675&width=1200&expires=33261691874"/>
         {/*Meta Tags Generated via https://www.opengraph.xyz*/}
