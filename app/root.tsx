@@ -34,6 +34,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         flex
         flex-col
         h-screen
+        min-w-[320px]
         p-0
         items-center 
         justify-center

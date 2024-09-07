@@ -14,5 +14,7 @@ export default {
       '5xl': '3.052rem',
     }
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')({nocompatible: true})
+  ],
 } satisfies Config;
