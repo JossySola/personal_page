@@ -4,7 +4,7 @@ import Menu from "~/atomic/molecules/menu";
 export const meta: MetaFunction = () => {
   return [
     { title: "@jossysola" },
-    { name: "description", content: "Personal homepage of Jossy Sola" },
+    { name: "description", content: "Jossy Sola Homepage. Art, Neurodivergent, Frontend development" },
   ];
 };
 

@@ -27,10 +27,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        {/*HTML Meta Tags*/}
-        <title>Jossy Sola Homepage</title>
-        <meta name="description" content="Jossy Sola Homepage. Art, Neurodivergent, Frontend development"/>
-
         {/*Facebook Meta Tags*/}
         <meta property="og:url" content="https://www.jossysola.com/banner.png"/>
         <meta property="og:type" content="website"/>
