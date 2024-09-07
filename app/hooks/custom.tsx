@@ -1,18 +1,16 @@
 import getUserLocale from "get-user-locale";
-import { useState, useEffect, useContext, createContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import Markdown from "react-markdown";
 import { DataContext } from "./context";
 
 export function useLanguage () {
     const [lang, setLang] = useState("es");
     const userLocale = getUserLocale();
-    
     useEffect(() => {
         if (userLocale === "en" || userLocale === "es") {
             setLang(userLocale);
         }
     }, []);
-
     return lang;
 }
 
@@ -54,9 +52,9 @@ export function useMarkdownFiles () {
     const [names, setNames] = useState<Array<string>>([]);
 
     const data = useContext(DataContext);
-    const lang = useLanguage();
-
+    
     useEffect(() => {
+        const lang = getUserLocale();
         const articles = data.articles[lang];
 
         const fetchMarkdown = async () => {

@@ -9,7 +9,7 @@ export default function Category ({children}: {
     return (
         <> 
             <article className="GeistReg flex items-center justify-center mt-6 w-full text-left border-t-2 md:border-none md:w-fit md:max-w-[450px] md:h-screen md:overflow-y-auto">
-                <div className="w-fit flex flex-col items-center max-h-screen overflow-y-auto items-center scrollbar-thin scrollbar-thumb-gray-900">
+                <div className="w-fit flex flex-col items-center md:max-h-screen md:overflow-y-auto items-center scrollbar-thin scrollbar-thumb-gray-900">
                     <button className="cursor-pointer m-[20px]" onClick={(e) => {
                             e.preventDefault();
                             navigate(-1);
