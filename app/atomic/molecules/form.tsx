@@ -44,7 +44,7 @@ export default function ContactForm () {
             }, 
             (error) => {
                 //console.log("Failed: ", error);
-                setError("The message couldn't be sent.");
+                setError("The message couldn't be sent. Please try again.");
                 setIsPending(false);
             }
         )
