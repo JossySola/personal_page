@@ -1,22 +1,28 @@
 import emailjs from '@emailjs/browser';
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AlertTriangle } from '@geist-ui/icons';
 import getUserLocale from 'get-user-locale';
+import { CheckInCircle } from '@geist-ui/icons';
 
 export default function ContactForm () {
     const form = useRef(null);
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
     const [isPending, setIsPending] = useState(false);
     const [error, setError] = useState('');
+    const [sent, setSent] = useState(false);
+    const [lang, setLang] = useState('');
+
+    useEffect(() => {
+        setLang(() => getUserLocale());
+    }, [])
 
     const service_key = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const template_key = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const public_key = import.meta.env.VITE_EMAILJS_PUBLIC;
-
-    const lang = getUserLocale();
     
     emailjs.init({
         publicKey: public_key,
@@ -34,6 +40,7 @@ export default function ContactForm () {
                 setEmail('');
                 setSubject('');
                 setMessage('');
+                setSent(true);
             }, 
             (error) => {
                 //console.log("Failed: ", error);
@@ -54,6 +61,9 @@ export default function ContactForm () {
                     <p className='flex text-[#fc472e] text-center'><AlertTriangle color='#fc472e'/>{error}</p> 
                     : 
                     null
+            }
+            {
+                sent ? <CheckInCircle size={32} color='#417e38'/> : null
             }
             {
                 lang === "en" ? 
