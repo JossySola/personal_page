@@ -22,7 +22,7 @@
         }
     },
     "articles": {
-        "en": ["neurodivergence"],
+        "en": ["neurodivergence", "autism"],
         "es": ["neurodivergencia","autismo"]
     },
     "gallery": {
