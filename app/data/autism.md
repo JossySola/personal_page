@@ -1,9 +1,10 @@
 # About my autism ✍🏽:
 
 🗂️ *Informally called: High Functioning Autism*
+
 🗂️ *Also called: Autism Level 1*
 
-Diagnosed Autism in adults usually have the majority of the following characteristics:
+**Diagnosed Autism in adults usually have the majority of the following characteristics:**
 
 - Finding it hard to understand what others are thinking or feeling
 - Getting very anxious about social situations
@@ -30,7 +31,7 @@ Diagnosed Autism in adults usually have the majority of the following characteri
 - Answering questions with long monologues or really short answers
 - Finding that others don't understand how you are feeling and say that "it's hard to know what you are thinking"
 
-⚙️ ==Autism is frequently accompanied by at least one co-ocurring condition such as ADHD, anxiety, depression, gastrointestinal and immune function disorders, or epilepsy.==
+> ⚙️ Autism is frequently accompanied by at least one co-ocurring condition such as ADHD, anxiety, depression, gastrointestinal and immune function disorders, or epilepsy.
 
 ---
 

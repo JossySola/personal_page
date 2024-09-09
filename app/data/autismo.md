@@ -1,9 +1,10 @@
 # Sobre mi autismo ✍🏽:
 
 🗂️ *Informalmente llamado: Autismo de Alto Funcionamiento*
+
 🗂️ *También llamado: Autismo Grado 1*
 
-Autismo diagnosticado en adultos con la mayoría de las siguientes características:
+**Autismo diagnosticado en adultos con la mayoría de las siguientes características:**
 
 - Dificultad para entender lo que otras personas piensan o sienten
 - Ansiedad y dificultad en situaciones/interacciones sociales
@@ -30,7 +31,7 @@ Autismo diagnosticado en adultos con la mayoría de las siguientes característi
 - Responder a conversaciones con largos monólogos o con respuestas muy cortas
 - Dificultad para estructurar y expresar sus propios pensamientos
 
-⚙️ ==El Autismo es usualmente acompañado con una combinación de Déficit de Atención, Ansiedad Generalizada, Depresión, Trastornos Gastrointestinales y/o Epilepsia.==
+> ⚙️ El Autismo es usualmente acompañado con una combinación de Déficit de Atención, Ansiedad Generalizada, Depresión, Trastornos Gastrointestinales y/o Epilepsia.
 
 ---
 
