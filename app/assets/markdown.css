@@ -46,5 +46,5 @@
     list-style: decimal;
 }
 .markdown em {
-    display: block;
+    display: inline-flex;
 }
