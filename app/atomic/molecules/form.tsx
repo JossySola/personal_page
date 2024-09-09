@@ -51,7 +51,7 @@ export default function ContactForm () {
     }
 
     return (
-        <form ref={form} onSubmit={(e) => handleSubmit(e)} className="w-full flex flex-col items-center" autoComplete="off">
+        <form ref={form} onSubmit={(e) => handleSubmit(e)} className="w-96 flex flex-col items-center" autoComplete="off">
             <input name="from_name" id='from_name' placeholder={lang === "en" ? "Name" : "Nombre"} type="text" value={name} onChange={e => setName(e.target.value)} className="w-full border-2 p-2 mb-2 hover:border-[#30679B] focus:border-[#30679B] md:w-96" required></input>
             <input name="reply_to" id='reply_to' placeholder="E-mail" type="email" value={email} onChange={e => setEmail(e.target.value)} className="w-full border-2 p-2 mb-2 hover:border-[#30679B] focus:border-[#30679B] md:w-96" required></input>
             <input name="subject" id='subject' placeholder={lang === "en" ? "Subject" : "Asunto"} type="text" value={subject} onChange={e => setSubject(e.target.value)} maxLength={30} className="w-full border-2 p-2 mb-2 hover:border-[#30679B] focus:border-[#30679B] md:w-96" required></input>
