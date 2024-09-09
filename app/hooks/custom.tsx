@@ -56,7 +56,7 @@ export function useMarkdownFiles () {
     useEffect(() => {
         const lang = getUserLocale();
         const articles = lang === 'es' || lang === 'en' ? data.articles[lang] : data.articles['en'];
-        console.log(articles)
+        console.log(lang)
         
         const fetchMarkdown = async () => {
             const newArticles: Array<JSX.Element> = articles.map(async (article: string) => {

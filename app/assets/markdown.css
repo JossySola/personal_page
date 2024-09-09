@@ -28,6 +28,8 @@
 }
 .markdown strong {
     margin: 0;
+    font-weight: normal;
+    font-family: 'GeistBold';
 }
 .markdown a {
     display: block;

@@ -40,4 +40,8 @@
         font-weight: 400;
         src: url(/Geist-Medium.ttf) format('truetype');
     }
+    @font-face {
+        font-family: 'GeistBold';
+        src: url(/Geist-Bold.ttf) format('truetype');
+    }
 }
