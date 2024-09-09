@@ -6,13 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 import Article from "~/atomic/atoms/article";
 
 export function useLanguage () {
-    const [lang, setLang] = useState("es");
-    const userLocale = getUserLocale();
-    useEffect(() => {
-        if (userLocale === "en" || userLocale === "es") {
-            setLang(userLocale);
-        }
-    }, []);
+    const lang = getUserLocale().includes('es') ? "es" : "en";
     return lang;
 }
 
@@ -51,12 +45,11 @@ export async function getData () {
 
 export function useMarkdownFiles () {
     const [files, setFiles] = useState<Array<JSX.Element>>([]);
-    const [lang, setLang] = useState('en');
     const data = useContext(DataContext);
-    
+    const lang = useLanguage();
+
     useEffect(() => {
         const fetchMarkdown = async () => {
-            setLang(() => getUserLocale());
             const articles = lang.includes('es') ? data.articles['es'] : data.articles['en'];
             const newArticles: Array<JSX.Element> = articles.map(async (article: string) => {
                 const fetched = await fetch(`https://raw.githubusercontent.com/JossySola/personal_page/main/app/data/${article}.md`)
@@ -69,7 +62,6 @@ export function useMarkdownFiles () {
 
         fetchMarkdown();
     }, []);
-    console.log(lang)
     return files;
 }
 
