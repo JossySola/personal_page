@@ -45,11 +45,13 @@ export async function getData () {
 
 export function useMarkdownFiles () {
     const [files, setFiles] = useState<Array<JSX.Element>>([]);
+    const [loading, setLoading] = useState<boolean>(false);
     const data = useContext(DataContext);
     const lang = useLanguage();
 
     useEffect(() => {
         const fetchMarkdown = async () => {
+            setLoading(true);
             const articles = lang.includes('es') ? data.articles['es'] : data.articles['en'];
             const newArticles: Array<JSX.Element> = articles.map(async (article: string) => {
                 const fetched = await fetch(`https://raw.githubusercontent.com/JossySola/personal_page/main/app/data/${article}.md`)
@@ -57,12 +59,15 @@ export function useMarkdownFiles () {
                 return <Article name={article.replaceAll("_", " ").toUpperCase()} document={<Markdown children={text}/>} key={uuidv4()}/>;
             });
             
-            Promise.all(newArticles).then(result => setFiles(result));
+            Promise.all(newArticles).then(result => {
+                setFiles(result);
+                setLoading(false);
+            });
         }
 
         fetchMarkdown();
     }, []);
-    return files;
+    return {files, loading};
 }
 
 export function usePictures (folder: string | undefined): [Array<JSX.Element>, boolean] {
