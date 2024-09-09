@@ -5,16 +5,14 @@ import { v4 as uuidv4 } from "uuid"
 import "../assets/markdown.css"
 
 export default function Articles () {
-    const {files, names} = useMarkdownFiles();
+    const files = useMarkdownFiles();
     
     return (
         <>
             <Category>
                 {
                     files.map((file) => {
-                        return names.map((name) => {
-                            return <Article name={name} document={file} key={uuidv4()} />
-                        })
+                        return file;
                     })
                 }
             </Category>

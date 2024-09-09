@@ -2,6 +2,8 @@ import getUserLocale from "get-user-locale";
 import { useState, useEffect, useContext } from "react";
 import Markdown from "react-markdown";
 import { DataContext } from "./context";
+import { v4 as uuidv4 } from "uuid";
+import Article from "~/atomic/atoms/article";
 
 export function useLanguage () {
     const [lang, setLang] = useState("es");
@@ -49,31 +51,26 @@ export async function getData () {
 
 export function useMarkdownFiles () {
     const [files, setFiles] = useState<Array<JSX.Element>>([]);
-    const [names, setNames] = useState<Array<string>>([]);
-
     const data = useContext(DataContext);
     
     useEffect(() => {
         const lang = getUserLocale();
         const articles = lang === 'en' || lang === 'es' ? data.articles[lang] : data.articles['en'];
-
+        
         const fetchMarkdown = async () => {
-            articles.map(async (article: string) => {
+            const newArticles: Array<JSX.Element> = articles.map(async (article: string) => {
                 const fetched = await fetch(`https://raw.githubusercontent.com/JossySola/personal_page/main/app/data/${article}.md`)
                 const text = await fetched.text();
-                setFiles(prev => {
-                    return [...prev, <Markdown children={text}/>]
-                });
-                setNames(prev => {
-                    return [...prev, article.replaceAll("_", " ").toUpperCase()];
-                })
-            })
+                return <Article name={article.replaceAll("_", " ").toUpperCase()} document={<Markdown children={text}/>} key={uuidv4()}/>;
+            });
+            
+            Promise.all(newArticles).then(result => setFiles(result));
         }
 
         fetchMarkdown();
-    }, [])
+    }, []);
     
-    return {files, names};
+    return files;
 }
 
 export function usePictures (folder: string | undefined): [Array<JSX.Element>, boolean] {
