@@ -1,5 +1,3 @@
-import "../../assets/article.css";
-
 export default function Article ({name, document}: {
     name: string,
     document: JSX.Element,

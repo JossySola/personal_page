@@ -40,7 +40,7 @@
     color: #A7D5FF;
 }
 .markdown ul {
-    list-style: circle;
+    list-style: disc;
 }
 .markdown ol {
     list-style: decimal;
